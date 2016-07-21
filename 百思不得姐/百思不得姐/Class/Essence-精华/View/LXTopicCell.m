@@ -9,9 +9,9 @@
 #import "LXTopicCell.h"
 #import "LXTopic.h"
 #import "UIImageView+WebCache.h"
-//#import "LXTopicPictureView.h"
-//#import "LXVoiceView.h"
-//#import "LXVideoView.h"
+#import "LXTopicPictureView.h"
+#import "LXVoiceView.h"
+#import "LXVideoView.h"
 #import "LXComment.h"
 #import "LXUser.h"
 #import "UIImage+LXExtension.h"
@@ -41,23 +41,25 @@
 //最热评论整个view
 @property (weak, nonatomic) IBOutlet UIView *topCmtView;
 
-////图片帖子中间的内容
-//@property (nonatomic, weak) LXTopicPictureView *pictureView;
-////声音帖子中间的内容
-//@property (nonatomic, weak) LXVoiceView *voiceView;
-////视频帖子中间的内容
-//@property (nonatomic, weak) LXVideoView *videoView;
+//图片帖子中间的内容
+@property (nonatomic, weak) LXTopicPictureView *pictureView;
+
+//声音帖子中间的内容
+@property (nonatomic, weak) LXVoiceView *voiceView;
+
+//视频帖子中间的内容
+@property (nonatomic, weak) LXVideoView *videoView;
 
 @end
 
 @implementation LXTopicCell
 
-+(instancetype)cell {
++ (instancetype)cell {
     return [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([self class]) owner:nil options:nil] lastObject];
 }
 
 - (void)awakeFromNib {
-    // Initialization code
+    
     UIImageView *bgView = [[UIImageView alloc] init];
     bgView.image = [UIImage imageNamed:@"mainCellBackground"];
     self.backgroundView = bgView;
@@ -69,40 +71,40 @@
     // Configure the view for the selected state
 }
 
-//-(LXVideoView *)videoView{
-//    if (_videoView  == nil) {
-//        LXVideoView *videoView = [LXVideoView videoView];
-//        [self.contentView addSubview:videoView];
-//        _videoView = videoView;
-//    }
-//    return _videoView;
-//}
-//
-//-(LXVoiceView *)voiceView{
-//    if (_voiceView == nil) {
-//        LXVoiceView *voiceView = [LXVoiceView voiceView];
-//        [self.contentView addSubview:voiceView];
-//        _voiceView = voiceView;
-//    }
-//    return _voiceView;
-//}
-//
-//-(LXTopicPictureView *)pictureView{
-//    if (_pictureView == nil) {
-//        LXTopicPictureView *pictureView = [LXTopicPictureView pictureView];
-//        [self.contentView addSubview:pictureView];
-//        _pictureView = pictureView;
-//    }
-//    return _pictureView;
-//}
-//
--(void)setTopic:(LXTopic *)topic {
+- (LXVideoView *)videoView{
+    if (_videoView  == nil) {
+        LXVideoView *videoView = [LXVideoView videoView];
+        [self.contentView addSubview:videoView];
+        _videoView = videoView;
+    }
+    return _videoView;
+}
+
+- (LXVoiceView *)voiceView{
+    if (_voiceView == nil) {
+        LXVoiceView *voiceView = [LXVoiceView voiceView];
+        [self.contentView addSubview:voiceView];
+        _voiceView = voiceView;
+    }
+    return _voiceView;
+}
+
+- (LXTopicPictureView *)pictureView{
+    if (_pictureView == nil) {
+        LXTopicPictureView *pictureView = [LXTopicPictureView pictureView];
+        [self.contentView addSubview:pictureView];
+        _pictureView = pictureView;
+    }
+    return _pictureView;
+}
+
+- (void)setTopic:(LXTopic *)topic {
     _topic = topic;
-    //新浪加V
+    //新浪V
     self.sina_vImageView.hidden = !topic.sina_v;
-    //设置头像
+    //头像
     [self.profileImageView setCircleHeader:topic.profile_image];
-    //设置名字
+    //名字
     self.nameLabel.text = topic.name;
     //设置帖子的创建时间
     self.createTimeLabel.text = topic.create_time;
@@ -146,13 +148,13 @@
     //处理最热评论
     if (topic.top_cmt) {
         self.topCmtView.hidden = NO;
-        //self.topCmtContentLabel.text = [NSString stringWithFormat:@"%@:%@", topic.top_cmt.user.username, topic.top_cmt.content];
+        self.topCmtContentLabel.text = [NSString stringWithFormat:@"%@:%@", topic.top_cmt.user.username, topic.top_cmt.contentWord];
     } else {
         self.topCmtView.hidden = YES;
     }
 }
 
--(void)setupButtonTitle:(UIButton *)button count:(NSInteger)count placeholder:(NSString *)placeholder {
+- (void)setupButtonTitle:(UIButton *)button count:(NSInteger)count placeholder:(NSString *)placeholder {
     if (count > 10000) {
         placeholder = [NSString stringWithFormat:@"%.1f万", count / 10000.0];
     } else if (count > 0) {
@@ -161,7 +163,7 @@
     [button setTitle:placeholder forState:UIControlStateNormal];
 }
 
--(void)setFrame:(CGRect)frame {
+- (void)setFrame:(CGRect)frame {
     
     frame.origin.x = LXTopicCellMargin;
     frame.size.width -= 2 * LXTopicCellMargin;

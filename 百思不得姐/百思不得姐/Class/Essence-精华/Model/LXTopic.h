@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "LXConst.h"
-@class YMComment;
+@class LXComment;
 
 @interface LXTopic : NSObject
 
@@ -51,7 +51,7 @@
 /** 视频路径*/
 @property (nonatomic, copy) NSString *videouri;
 /** 最热评论(存放YMComment数据)*/
-@property (nonatomic, strong) YMComment *top_cmt;
+@property (nonatomic, strong) LXComment *top_cmt;
 /** ctime*/
 @property (nonatomic, copy) NSString *qzone_uid;
 

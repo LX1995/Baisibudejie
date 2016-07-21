@@ -1,5 +1,5 @@
 //
-//  LXFocusViewController.h
+//  LXLoginRegisterViewController.h
 //  百思不得姐
 //
 //  Created by 李想 on 16/7/21.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LXFocusViewController : UIViewController
+@interface LXLoginRegisterViewController : UIViewController
 
 @end

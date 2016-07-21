@@ -8,7 +8,7 @@
 
 #import "LXCommentViewController.h"
 
-//#import "LXTopicCell.h"
+#import "LXTopicCell.h"
 #import "LXTopic.h"
 #import "MJRefresh.h"
 #import "AFNetworking.h"
@@ -16,7 +16,7 @@
 #import "MJExtension.h"
 //#import "LXCommentHeaderView.h"
 //#import "LXCommentCell.h"
-//#import "SVProgressHUD.h"
+#import "SVProgressHUD.h"
 
 #import "LXConst.h"
 

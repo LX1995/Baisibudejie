@@ -10,6 +10,8 @@
 
 #import "UIView+LXExtension.h"
 
+#import "LXPublishView.h"
+
 @interface LXTabbar ()
 
 @property (nonatomic, weak) UIButton *publishButton;
@@ -37,7 +39,7 @@
 }
 
 -(void)publishButtonClick {
-    //[LXPublishView show];
+    [LXPublishView show];
 }
 
 -(void)layoutSubviews {

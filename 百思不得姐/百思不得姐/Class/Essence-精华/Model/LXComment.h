@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-@class YMUser;
+@class LXUser;
 
 @interface LXComment : NSObject
 
@@ -27,6 +27,6 @@
 @property (nonatomic, assign) NSInteger like_count;
 
 //用户
-@property (nonatomic, strong) YMUser    *user;
+@property (nonatomic, strong) LXUser    *user;
 
 @end

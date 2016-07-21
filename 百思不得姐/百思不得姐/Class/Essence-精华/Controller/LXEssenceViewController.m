@@ -10,6 +10,10 @@
 
 #import "LXTopicViewController.h"
 
+#import "LXRecommandTagsViewController.h"
+
+#import "UIBarButtonItem+LXExtension.h"
+
 #import "PrefixHeader.pch"
 
 @interface LXEssenceViewController ()<UIScrollViewDelegate>
@@ -63,17 +67,17 @@
     
     LXTopicViewController *voiceVC = [[LXTopicViewController alloc] init];
     voiceVC.title = @"声音";
-    //
+    voiceVC.type = LXTopicTypeVoice;
     [self addChildViewController:voiceVC];
     
     LXTopicViewController *pictureVC = [[LXTopicViewController alloc] init];
     pictureVC.title = @"图片";
-    //
+    pictureVC.type = LXTopicTypePicture;
     [self addChildViewController:pictureVC];
     
     LXTopicViewController *wordVC = [[LXTopicViewController alloc] init];
     wordVC.title = @"段子";
-    //
+    wordVC.type = LXTopicTypeWord;
     [self addChildViewController:wordVC];
 }
 
@@ -84,7 +88,19 @@
     //设置导航栏内容
     self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MainTitle"]];
     //导航栏左边的按钮
-    //self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"MainTagSubIcon" highImage:@"MainTagSubIconClick" target:self action:@selector(tagButtonClick)];
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"MainTagSubIcon" highImage:@"MainTagSubIconClick" target:self action:@selector(clickTagButton:)];
+    
+//    UIImage *leftImage = [[UIImage imageNamed:@"MainTagSubIcon"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+//    
+//    UIBarButtonItem *tagButtonItem = [[UIBarButtonItem alloc] initWithImage:leftImage style:UIBarButtonItemStylePlain target:self action:@selector(clickTagButton:)];
+//
+//    self.navigationItem.leftBarButtonItem = tagButtonItem;
+}
+
+#pragma mark 导航栏左边的按钮点击
+-(void)clickTagButton:(UIButton *)tagButtonItem {
+    LXRecommandTagsViewController *tagVC = [[LXRecommandTagsViewController alloc] init];
+    [self.navigationController pushViewController:tagVC animated:YES];
 }
 
 #pragma mark - 标题视图

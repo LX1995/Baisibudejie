@@ -115,9 +115,9 @@
         }
         
         if (self.top_cmt) {
-//            NSString *content = [NSString stringWithFormat:@"%@:%@", self.top_cmt.user.username, self.top_cmt];
-//            CGFloat contentH = [content boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:14]} context:nil].size.height;
-//            _cellHeight += LXTopicCellCmtTitleH + contentH + LXTopicCellMargin;
+            NSString *content = [NSString stringWithFormat:@"%@:%@", self.top_cmt.user.username, self.top_cmt];
+            CGFloat contentH = [content boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:14]} context:nil].size.height;
+            _cellHeight += LXTopicCellCmtTitleH + contentH + LXTopicCellMargin;
         }
         
         //底部的高度

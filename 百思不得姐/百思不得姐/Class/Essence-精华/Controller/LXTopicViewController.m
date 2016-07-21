@@ -7,8 +7,6 @@
 //
 
 #import "LXTopicViewController.h"
-
-
 #import "LXTopic.h"
 #import "LXTopicCell.h"
 #import "LXCommentViewController.h"

@@ -2,13 +2,20 @@
 //  LXFocusViewController.m
 //  百思不得姐
 //
-//  Created by 李想 on 16/7/15.
+//  Created by 李想 on 16/7/21.
 //  Copyright © 2016年 李想. All rights reserved.
 //
 
 #import "LXFocusViewController.h"
+//#import "LXRecommandViewController.h"
+#import "LXLoginRegisterViewController.h"
+
+#import "UIBarButtonItem+LXExtension.h"
+
+#import "PrefixHeader.pch"
 
 @interface LXFocusViewController ()
+
 
 @end
 
@@ -16,8 +23,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor orangeColor];
+    self.view.backgroundColor = LXGlobalBg;
+    //设置导航栏内容
+    self.navigationItem.title = @"我的关注";
+    //导航栏左边的按钮
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"friendsRecommentIcon" highImage:@"friendsRecommentIcon-click" target:self action:@selector(friendsRecButtonClick)];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -25,14 +35,17 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
+//#pragma mark 导航栏左边的按钮点击
+//-(void)friendsRecButtonClick {
+//    YMRecommandViewController *recommandVC = [[YMRecommandViewController alloc] init];
+//    
+//    [self.navigationController pushViewController:recommandVC animated:YES];
+//}
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)loginRegister:(id)sender {
+    LXLoginRegisterViewController *login = [[LXLoginRegisterViewController alloc] init];
+    [self presentViewController:login animated:YES completion:nil];
+    
 }
-*/
 
 @end
