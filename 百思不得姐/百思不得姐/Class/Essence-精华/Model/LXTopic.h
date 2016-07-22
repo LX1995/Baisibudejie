@@ -50,7 +50,7 @@
 @property (nonatomic, assign) int playcount;
 /** 视频路径*/
 @property (nonatomic, copy) NSString *videouri;
-/** 最热评论(存放YMComment数据)*/
+/** 最热评论(存放LXComment数据)*/
 @property (nonatomic, strong) LXComment *top_cmt;
 /** ctime*/
 @property (nonatomic, copy) NSString *qzone_uid;

@@ -31,7 +31,7 @@
 }
 
 +(NSDictionary *)mj_objectClassInArray {
-    return @{@"top_cmt" : @"YMComment"};
+    return @{@"top_cmt" : @"LXComment"};
 }
 
 -(NSString *)create_time  {

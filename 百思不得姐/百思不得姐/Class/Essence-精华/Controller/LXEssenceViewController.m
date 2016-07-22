@@ -98,7 +98,7 @@
 }
 
 #pragma mark 导航栏左边的按钮点击
--(void)clickTagButton:(UIButton *)tagButtonItem {
+- (void)clickTagButton:(UIButton *)tagButtonItem {
     LXRecommandTagsViewController *tagVC = [[LXRecommandTagsViewController alloc] init];
     [self.navigationController pushViewController:tagVC animated:YES];
 }
@@ -154,7 +154,7 @@
 }
 
 #pragma mark 便签栏按钮点击
--(void)titleClick:(UIButton *)button {
+- (void)titleClick:(UIButton *)button {
     //修改按钮状态
     self.selectedButton.enabled = YES;
     button.enabled = NO;
@@ -195,7 +195,7 @@
 }
 
 #pragma mark -UIScrollViewDelegate
--(void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView{
+- (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView{
     //添加子控制器的view
     //当前索引
     NSInteger index = scrollView.contentOffset.x / scrollView.width;
@@ -207,7 +207,7 @@
     [scrollView addSubview:vc.view];
 }
 
--(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
     [self scrollViewDidEndScrollingAnimation:scrollView];
     //当前索引
     NSInteger index = scrollView.contentOffset.x / scrollView.width;

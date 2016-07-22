@@ -12,8 +12,8 @@
 #import "LXPublishViewController.h"
 #import "PrefixHeader.pch"
 
-static CGFloat const YMAnimationDelay = 0.1;
-static CGFloat const YMAnimationSpringFactor = 8;
+static CGFloat const LXAnimationDelay = 0.1;
+static CGFloat const LXAnimationSpringFactor = 8;
 
 @interface LXPublishView ()
 
@@ -78,9 +78,9 @@ static UIWindow *window_;
         POPSpringAnimation *animation = [POPSpringAnimation animationWithPropertyNamed:kPOPViewFrame];
         animation.fromValue = [NSValue valueWithCGRect:CGRectMake(buttonX, buttonBeginY, buttonW, buttonH)];
         animation.toValue = [NSValue valueWithCGRect:CGRectMake(buttonX, buttonEndY, buttonW, buttonH)];
-        animation.springSpeed = YMAnimationSpringFactor;
-        animation.springBounciness = YMAnimationSpringFactor;
-        animation.beginTime = CACurrentMediaTime() + YMAnimationDelay * i;
+        animation.springSpeed = LXAnimationSpringFactor;
+        animation.springBounciness = LXAnimationSpringFactor;
+        animation.beginTime = CACurrentMediaTime() + LXAnimationDelay * i;
         [button pop_addAnimation:animation forKey:nil];
     }
     
@@ -94,7 +94,7 @@ static UIWindow *window_;
     CGFloat centerBeginY = centerEndY - SCREENH;
     animation.fromValue = [NSValue valueWithCGPoint:CGPointMake(centerX, centerBeginY)];
     animation.toValue = [NSValue valueWithCGPoint:CGPointMake(centerX, centerEndY)];
-    animation.beginTime = CACurrentMediaTime() + YMAnimationDelay * images.count;
+    animation.beginTime = CACurrentMediaTime() + LXAnimationDelay * images.count;
     [animation setCompletionBlock:^(POPAnimation *animation, BOOL finish) {
         //设置控制器的view不能被点击
         self.userInteractionEnabled = YES;
@@ -135,7 +135,7 @@ static UIWindow *window_;
         CGFloat centerY = subview.centerY + SCREENH;
         animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
         animation.toValue = [NSValue valueWithCGPoint:CGPointMake(subview.centerX, centerY)];
-        animation.beginTime = CACurrentMediaTime() + YMAnimationDelay * (i - beginIndex);
+        animation.beginTime = CACurrentMediaTime() + LXAnimationDelay * (i - beginIndex);
         [subview pop_addAnimation:animation forKey:nil];
         
         //监听最后一个动画

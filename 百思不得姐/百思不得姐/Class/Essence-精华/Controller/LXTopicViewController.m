@@ -68,13 +68,13 @@ static NSString *const LXTopicCellID = @"topic";
 }
 
 -(void)tabBarSelected {
+    
     //如果是连点 2 次，并且 如果选中的是当前导航控制器，刷新
     if (self.lastSelectedIndex != self.tabBarController.selectedIndex && self.view.isShowingOnKeyWindow) {
         [self.tableView.mj_header beginRefreshing];
     };
     
     self.lastSelectedIndex = self.tabBarController.selectedIndex;
-    
 }
 
 #pragma mark 添加刷新控件

@@ -11,8 +11,8 @@
 #import "POP.h"
 #import "PrefixHeader.pch"
 
-static CGFloat const YMAnimationDelay = 0.1;
-static CGFloat const YMSpringFactor = 10;
+static CGFloat const LXAnimationDelay = 0.1;
+static CGFloat const LXSpringFactor = 10;
 
 @interface LXPublishViewController ()
 
@@ -58,9 +58,9 @@ static CGFloat const YMSpringFactor = 10;
         POPSpringAnimation *anim = [POPSpringAnimation animationWithPropertyNamed:kPOPViewFrame];
         anim.fromValue = [NSValue valueWithCGRect:CGRectMake(buttonX, buttonBeginY, buttonW, buttonH)];
         anim.toValue = [NSValue valueWithCGRect:CGRectMake(buttonX, buttonEndY, buttonW, buttonH)];
-        anim.springBounciness = YMSpringFactor;
-        anim.springSpeed = YMSpringFactor;
-        anim.beginTime = CACurrentMediaTime() + YMAnimationDelay * i;
+        anim.springBounciness = LXSpringFactor;
+        anim.springSpeed = LXSpringFactor;
+        anim.beginTime = CACurrentMediaTime() + LXAnimationDelay * i;
         [button pop_addAnimation:anim forKey:nil];
     }
     
@@ -89,7 +89,7 @@ static CGFloat const YMSpringFactor = 10;
         // 动画的执行节奏(一开始很慢, 后面很快)
         //        anim.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
         anim.toValue = [NSValue valueWithCGPoint:CGPointMake(subview.centerX, centerY)];
-        anim.beginTime = CACurrentMediaTime() + (i - beginIndex) * YMAnimationDelay;
+        anim.beginTime = CACurrentMediaTime() + (i - beginIndex) * LXAnimationDelay;
         [subview pop_addAnimation:anim forKey:nil];
         
         // 监听最后一个动画
