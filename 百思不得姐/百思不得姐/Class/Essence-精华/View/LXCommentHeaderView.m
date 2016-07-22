@@ -8,6 +8,7 @@
 
 #import "LXCommentHeaderView.h"
 #import "PrefixHeader.pch"
+
 @interface LXCommentHeaderView ()
 
 /** 文字*/
@@ -17,7 +18,7 @@
 
 @implementation LXCommentHeaderView
 
-+(instancetype)headerViewTableView:(UITableView *)tableView {
++ (instancetype)headerViewTableView:(UITableView *)tableView {
     static NSString *ID = @"header";
     LXCommentHeaderView *header = [tableView dequeueReusableHeaderFooterViewWithIdentifier:ID];
     if (header == nil) {
@@ -27,7 +28,7 @@
     return header;
 }
 
--(instancetype)initWithReuseIdentifier:(NSString *)reuseIdentifier {
+- (instancetype)initWithReuseIdentifier:(NSString *)reuseIdentifier {
     if (self = [super initWithReuseIdentifier:reuseIdentifier]) {
         self.contentView.backgroundColor = LXGlobalBg;
         UILabel *label = [[UILabel alloc] init];
@@ -41,7 +42,7 @@
     return self;
 }
 
--(void)setTitle:(NSString *)title {
+- (void)setTitle:(NSString *)title {
     _title = title;
     self.label.text = title;
 }

@@ -46,23 +46,23 @@
     // Configure the view for the selected state
 }
 
--(void)setComment:(LXComment *)comment {
+- (void)setComment:(LXComment *)comment {
     _comment = comment;
     
     [self.profileImageView setCircleHeader:comment.user.profile_image];
     self.sexView.image = [comment.user.sex isEqualToString:LXUserSexMale] ? [UIImage imageNamed:@"Profile_manIcon"] : [UIImage imageNamed:@"Profile_womanIcon"];
-    self.contentLabel.text = comment.contentWord;
+    self.contentLabel.text = comment.content;
     self.usernameLabel.text = comment.user.username;
     self.likeCountLabel.text = [NSString stringWithFormat:@"%zd", comment.like_count];
-    if (comment.voiceURL.length) {
+    if (comment.voiceuri.length) {
         self.voiceButton.hidden = NO;
-        [self.voiceButton setTitle:[NSString stringWithFormat:@"%zd", comment.voiceTime] forState:UIControlStateNormal];
+        [self.voiceButton setTitle:[NSString stringWithFormat:@"%zd", comment.voicetime] forState:UIControlStateNormal];
     } else {
         self.voiceButton.hidden = YES;
     }
 }
 
--(void)setFrame:(CGRect)frame {
+- (void)setFrame:(CGRect)frame {
     frame.origin.x = LXTopicCellMargin;
     frame.size.width -= 2 * LXTopicCellMargin;
     [super setFrame:frame];

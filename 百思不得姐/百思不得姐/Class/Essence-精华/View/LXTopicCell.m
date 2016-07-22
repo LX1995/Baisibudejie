@@ -148,7 +148,7 @@
     //处理最热评论
     if (topic.top_cmt) {
         self.topCmtView.hidden = NO;
-        self.topCmtContentLabel.text = [NSString stringWithFormat:@"%@:%@", topic.top_cmt.user.username, topic.top_cmt.contentWord];
+        self.topCmtContentLabel.text = [NSString stringWithFormat:@"%@:%@", topic.top_cmt.user.username, topic.top_cmt.content];
     } else {
         self.topCmtView.hidden = YES;
     }

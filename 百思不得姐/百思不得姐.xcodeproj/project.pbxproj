@@ -26,6 +26,12 @@
 		E94217A11D41FD87004EFC90 /* LXCommentHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = E94217A01D41FD87004EFC90 /* LXCommentHeaderView.m */; };
 		E94217A51D41FF4D004EFC90 /* LXCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E94217A31D41FF4D004EFC90 /* LXCommentCell.m */; };
 		E94217A61D41FF4D004EFC90 /* LXCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E94217A41D41FF4D004EFC90 /* LXCommentCell.xib */; };
+		E94217A91D421D85004EFC90 /* LXSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = E94217A81D421D85004EFC90 /* LXSquare.m */; };
+		E94217AD1D421DC7004EFC90 /* LXWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E94217AB1D421DC7004EFC90 /* LXWebViewController.m */; };
+		E94217AE1D421DC7004EFC90 /* LXWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E94217AC1D421DC7004EFC90 /* LXWebViewController.xib */; };
+		E94217B11D421E07004EFC90 /* LXMineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E94217B01D421E07004EFC90 /* LXMineCell.m */; };
+		E94217B41D421E58004EFC90 /* LXMineFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = E94217B31D421E58004EFC90 /* LXMineFooterView.m */; };
+		E94217B71D421E90004EFC90 /* LXSquareButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E94217B61D421E90004EFC90 /* LXSquareButton.m */; };
 		E94E91881D3C661C00790ECD /* LXCommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E94E91861D3C661C00790ECD /* LXCommentViewController.m */; };
 		E94E91891D3C661C00790ECD /* LXCommentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E94E91871D3C661C00790ECD /* LXCommentViewController.xib */; };
 		E94E918C1D3C696C00790ECD /* LXComment.m in Sources */ = {isa = PBXBuildFile; fileRef = E94E918B1D3C696C00790ECD /* LXComment.m */; };
@@ -99,6 +105,17 @@
 		E94217A21D41FF4D004EFC90 /* LXCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXCommentCell.h; sourceTree = "<group>"; };
 		E94217A31D41FF4D004EFC90 /* LXCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXCommentCell.m; sourceTree = "<group>"; };
 		E94217A41D41FF4D004EFC90 /* LXCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LXCommentCell.xib; sourceTree = "<group>"; };
+		E94217A71D421D85004EFC90 /* LXSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXSquare.h; sourceTree = "<group>"; };
+		E94217A81D421D85004EFC90 /* LXSquare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXSquare.m; sourceTree = "<group>"; };
+		E94217AA1D421DC7004EFC90 /* LXWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXWebViewController.h; sourceTree = "<group>"; };
+		E94217AB1D421DC7004EFC90 /* LXWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXWebViewController.m; sourceTree = "<group>"; };
+		E94217AC1D421DC7004EFC90 /* LXWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LXWebViewController.xib; sourceTree = "<group>"; };
+		E94217AF1D421E07004EFC90 /* LXMineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXMineCell.h; sourceTree = "<group>"; };
+		E94217B01D421E07004EFC90 /* LXMineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXMineCell.m; sourceTree = "<group>"; };
+		E94217B21D421E58004EFC90 /* LXMineFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXMineFooterView.h; sourceTree = "<group>"; };
+		E94217B31D421E58004EFC90 /* LXMineFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXMineFooterView.m; sourceTree = "<group>"; };
+		E94217B51D421E90004EFC90 /* LXSquareButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXSquareButton.h; sourceTree = "<group>"; };
+		E94217B61D421E90004EFC90 /* LXSquareButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXSquareButton.m; sourceTree = "<group>"; };
 		E94E91851D3C661C00790ECD /* LXCommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXCommentViewController.h; sourceTree = "<group>"; };
 		E94E91861D3C661C00790ECD /* LXCommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXCommentViewController.m; sourceTree = "<group>"; };
 		E94E91871D3C661C00790ECD /* LXCommentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LXCommentViewController.xib; sourceTree = "<group>"; };
@@ -462,6 +479,9 @@
 			children = (
 				E94E919D1D3CAB8200790ECD /* LXMeViewController.h */,
 				E94E919E1D3CAB8200790ECD /* LXMeViewController.m */,
+				E94217AA1D421DC7004EFC90 /* LXWebViewController.h */,
+				E94217AB1D421DC7004EFC90 /* LXWebViewController.m */,
+				E94217AC1D421DC7004EFC90 /* LXWebViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -469,6 +489,8 @@
 		E9B7BB5E1D38BC590008E21D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E94217A71D421D85004EFC90 /* LXSquare.h */,
+				E94217A81D421D85004EFC90 /* LXSquare.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -476,6 +498,12 @@
 		E9B7BB5F1D38BC590008E21D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E94217AF1D421E07004EFC90 /* LXMineCell.h */,
+				E94217B01D421E07004EFC90 /* LXMineCell.m */,
+				E94217B21D421E58004EFC90 /* LXMineFooterView.h */,
+				E94217B31D421E58004EFC90 /* LXMineFooterView.m */,
+				E94217B51D421E90004EFC90 /* LXSquareButton.h */,
+				E94217B61D421E90004EFC90 /* LXSquareButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -628,6 +656,7 @@
 				E918AA231D3F77F400BE2F8A /* LXPublishViewController.xib in Resources */,
 				E918AA0B1D3F592A00BE2F8A /* LXShowPictureViewController.xib in Resources */,
 				E94217A61D41FF4D004EFC90 /* LXCommentCell.xib in Resources */,
+				E94217AE1D421DC7004EFC90 /* LXWebViewController.xib in Resources */,
 				E94E91891D3C661C00790ECD /* LXCommentViewController.xib in Resources */,
 				E94E91B31D3CC89C00790ECD /* LXTopicCell.xib in Resources */,
 				E9C1D9601D40B75A0067DF15 /* LXFocusViewController.xib in Resources */,
@@ -694,6 +723,8 @@
 			files = (
 				E918AA1C1D3F763300BE2F8A /* LXPublishView.m in Sources */,
 				E918AA0A1D3F592A00BE2F8A /* LXShowPictureViewController.m in Sources */,
+				E94217B41D421E58004EFC90 /* LXMineFooterView.m in Sources */,
+				E94217AD1D421DC7004EFC90 /* LXWebViewController.m in Sources */,
 				E94E91881D3C661C00790ECD /* LXCommentViewController.m in Sources */,
 				E94E918F1D3C6D8800790ECD /* LXRecommandTag.m in Sources */,
 				E94E91AB1D3CC47200790ECD /* UIImageView+LXExtension.m in Sources */,
@@ -719,6 +750,7 @@
 				E9B7BB751D38C0810008E21D /* LXEssenceViewController.m in Sources */,
 				E9C1D9521D40779A0067DF15 /* LXNewViewController.m in Sources */,
 				E9C1D94B1D4069CE0067DF15 /* Foundation+Log.m in Sources */,
+				E94217B11D421E07004EFC90 /* LXMineCell.m in Sources */,
 				E918AA161D3F67B600BE2F8A /* LXVideoView.m in Sources */,
 				E9C1D95F1D40B75A0067DF15 /* LXFocusViewController.m in Sources */,
 				E9B7BB811D38C9270008E21D /* LXTopicViewController.m in Sources */,
@@ -729,9 +761,11 @@
 				E94E91951D3C6DE600790ECD /* LXUser.m in Sources */,
 				E94217A11D41FD87004EFC90 /* LXCommentHeaderView.m in Sources */,
 				E94E919C1D3C714B00790ECD /* NSDate+LXExtension.m in Sources */,
+				E94217B71D421E90004EFC90 /* LXSquareButton.m in Sources */,
 				E94E91921D3C6DA900790ECD /* LXTopic.m in Sources */,
 				E918AA0E1D3F5E1500BE2F8A /* LXProgressView.m in Sources */,
 				E94217A51D41FF4D004EFC90 /* LXCommentCell.m in Sources */,
+				E94217A91D421D85004EFC90 /* LXSquare.m in Sources */,
 				E918AA261D3F793200BE2F8A /* LXVerticalButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

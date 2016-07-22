@@ -7,6 +7,13 @@
 //
 
 #import "LXMeViewController.h"
+#import "LXMineFooterView.h"
+#import "LXMineCell.h"
+
+#import "PrefixHeader.pch"
+#import "UIBarButtonItem+LXExtension.h"
+
+static NSString *mineID = @"mine";
 
 @interface LXMeViewController ()
 
@@ -17,11 +24,46 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    [self setupNav];
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [self setupTableView];
+}
+
+-(void)setupNav {
+    self.view.backgroundColor = LXGlobalBg;
+    //设置导航栏内容
+    self.navigationItem.title = @"我的";
+    //导航栏左边的按钮
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"nav_coin_icon" highImage:@"nav_coin_icon_click" target:self action:@selector(coinButtonClick)];
+    
+    //导航栏右边的按钮
+    self.navigationItem.rightBarButtonItems = @[[UIBarButtonItem itemWithImage:@"mine-setting-icon" highImage:@"mine-setting-icon-click" target:self action:@selector(settingButtonClick)], [UIBarButtonItem itemWithImage:@"mine-moon-icon" highImage:@"mine-moon-icon-click" target:self action:@selector(moonButtonClick)]];
+}
+
+-(void)setupTableView {
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    [self.tableView registerClass:[LXMineCell class] forCellReuseIdentifier:mineID];
+    self.tableView.sectionHeaderHeight = 0;
+    self.tableView.sectionFooterHeight = LXTopicCellMargin;
+    //往上移动 25
+    self.tableView.contentInset = UIEdgeInsetsMake(LXTopicCellMargin - 35, 0, 0, 0);
+    //设置footerView
+    self.tableView.tableFooterView = [[LXMineFooterView alloc] init];
+}
+
+#pragma mark 导航栏左边的按钮点击
+-(void)coinButtonClick {
+    LXLogFunc;
+}
+
+#pragma mark 导航栏夜间模式按钮点击
+-(void)moonButtonClick {
+    LXLogFunc;
+}
+
+#pragma mark 导航栏右边设置的按钮点击
+-(void)settingButtonClick {
+    LXLogFunc;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,24 +74,32 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+
+    return 1;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:mineID];
+    if (indexPath.section == 0) {
+        cell.imageView.image = [UIImage imageNamed:@"setup-head-default"];
+        cell.textLabel.text = @"登录/注册";
+    } else if (indexPath.section == 1) {
+        cell.textLabel.text = @"离线下载";
+    }
     
     return cell;
 }
-*/
+
+#pragma mark -UITableViewDelegate
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+}
 
 /*
 // Override to support conditional editing of the table view.
