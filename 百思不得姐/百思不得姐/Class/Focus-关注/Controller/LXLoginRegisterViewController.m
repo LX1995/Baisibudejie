@@ -37,6 +37,16 @@
     // Dispose of any resources that can be recreated.
 }
 
+//针对点击控制器view，系统自动调用下面方法，
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    //[self.textField resignFirstResponder];//点击空白处关某一个键盘-------------------------**
+    
+    //通知文本框所属的父视图结束编辑状态，父视图就会将其中包含的所有文本框一一放弃第一响应者
+    
+    [self.view endEditing:YES];//关闭任意文本框的键盘----------------------------------------**
+}
+
 - (IBAction)showLoginOrRegister:(id)sender {
 //    //退出键盘
 //    [self.view endEditing:YES];

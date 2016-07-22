@@ -35,12 +35,12 @@
     // Dispose of any resources that can be recreated.
 }
 
-//#pragma mark 导航栏左边的按钮点击
-//-(void)friendsRecButtonClick {
+#pragma mark 导航栏左边的按钮点击
+-(void)friendsRecButtonClick {
 //    YMRecommandViewController *recommandVC = [[YMRecommandViewController alloc] init];
 //    
 //    [self.navigationController pushViewController:recommandVC animated:YES];
-//}
+}
 
 - (IBAction)loginRegister:(id)sender {
     LXLoginRegisterViewController *login = [[LXLoginRegisterViewController alloc] init];

@@ -20,7 +20,7 @@
 
 @implementation LXTabbarController
 
-+(void)initialize {
++ (void)initialize {
     
     //设置tabbar点击字体颜色
     NSMutableDictionary *attrs = [NSMutableDictionary dictionary];
@@ -48,15 +48,12 @@
     [self setValue:[[LXTabbar alloc] init] forKey:@"tabBar"];
 }
 
-/**
- *  初始化子控制器
- *
- *  @param vc            控制器
- *  @param title         名称
- *  @param image         默认图片
- *  @param selectedImage 选中图片
- */
--(void)setChildController:(UIViewController *)vc title:(NSString *)title image:(NSString *)image selectedImage:(NSString *)selectedImage {
+//初始化子控制器
+//@param vc            控制器
+//@param title         名称
+//@param image         默认图片
+//@param selectedImage 选中图片
+- (void)setChildController:(UIViewController *)vc title:(NSString *)title image:(NSString *)image selectedImage:(NSString *)selectedImage {
     //设置文字和图片
     vc.navigationItem.title = title;
     vc.tabBarItem.title = title;
