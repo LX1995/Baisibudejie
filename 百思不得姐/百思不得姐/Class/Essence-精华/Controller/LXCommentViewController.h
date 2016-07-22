@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+@class LXTopic;
 
 @interface LXCommentViewController : UIViewController
+
+@property (nonatomic, strong) LXTopic *topic;
 
 @end

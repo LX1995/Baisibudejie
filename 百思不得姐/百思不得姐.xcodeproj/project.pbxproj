@@ -23,6 +23,9 @@
 		E918AA221D3F77F400BE2F8A /* LXPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E918AA201D3F77F400BE2F8A /* LXPublishViewController.m */; };
 		E918AA231D3F77F400BE2F8A /* LXPublishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E918AA211D3F77F400BE2F8A /* LXPublishViewController.xib */; };
 		E918AA261D3F793200BE2F8A /* LXVerticalButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E918AA251D3F793200BE2F8A /* LXVerticalButton.m */; };
+		E94217A11D41FD87004EFC90 /* LXCommentHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = E94217A01D41FD87004EFC90 /* LXCommentHeaderView.m */; };
+		E94217A51D41FF4D004EFC90 /* LXCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E94217A31D41FF4D004EFC90 /* LXCommentCell.m */; };
+		E94217A61D41FF4D004EFC90 /* LXCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E94217A41D41FF4D004EFC90 /* LXCommentCell.xib */; };
 		E94E91881D3C661C00790ECD /* LXCommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E94E91861D3C661C00790ECD /* LXCommentViewController.m */; };
 		E94E91891D3C661C00790ECD /* LXCommentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E94E91871D3C661C00790ECD /* LXCommentViewController.xib */; };
 		E94E918C1D3C696C00790ECD /* LXComment.m in Sources */ = {isa = PBXBuildFile; fileRef = E94E918B1D3C696C00790ECD /* LXComment.m */; };
@@ -91,6 +94,11 @@
 		E918AA211D3F77F400BE2F8A /* LXPublishViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LXPublishViewController.xib; sourceTree = "<group>"; };
 		E918AA241D3F793200BE2F8A /* LXVerticalButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXVerticalButton.h; sourceTree = "<group>"; };
 		E918AA251D3F793200BE2F8A /* LXVerticalButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXVerticalButton.m; sourceTree = "<group>"; };
+		E942179F1D41FD87004EFC90 /* LXCommentHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXCommentHeaderView.h; sourceTree = "<group>"; };
+		E94217A01D41FD87004EFC90 /* LXCommentHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXCommentHeaderView.m; sourceTree = "<group>"; };
+		E94217A21D41FF4D004EFC90 /* LXCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXCommentCell.h; sourceTree = "<group>"; };
+		E94217A31D41FF4D004EFC90 /* LXCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXCommentCell.m; sourceTree = "<group>"; };
+		E94217A41D41FF4D004EFC90 /* LXCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LXCommentCell.xib; sourceTree = "<group>"; };
 		E94E91851D3C661C00790ECD /* LXCommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXCommentViewController.h; sourceTree = "<group>"; };
 		E94E91861D3C661C00790ECD /* LXCommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXCommentViewController.m; sourceTree = "<group>"; };
 		E94E91871D3C661C00790ECD /* LXCommentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LXCommentViewController.xib; sourceTree = "<group>"; };
@@ -382,6 +390,11 @@
 				E9C1D9451D405FD50067DF15 /* LXVoiceView.h */,
 				E9C1D9461D405FD50067DF15 /* LXVoiceView.m */,
 				E9C1D9481D405FEC0067DF15 /* LXVoiceView.xib */,
+				E942179F1D41FD87004EFC90 /* LXCommentHeaderView.h */,
+				E94217A01D41FD87004EFC90 /* LXCommentHeaderView.m */,
+				E94217A21D41FF4D004EFC90 /* LXCommentCell.h */,
+				E94217A31D41FF4D004EFC90 /* LXCommentCell.m */,
+				E94217A41D41FF4D004EFC90 /* LXCommentCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -614,6 +627,7 @@
 				E9C1D9491D405FEC0067DF15 /* LXVoiceView.xib in Resources */,
 				E918AA231D3F77F400BE2F8A /* LXPublishViewController.xib in Resources */,
 				E918AA0B1D3F592A00BE2F8A /* LXShowPictureViewController.xib in Resources */,
+				E94217A61D41FF4D004EFC90 /* LXCommentCell.xib in Resources */,
 				E94E91891D3C661C00790ECD /* LXCommentViewController.xib in Resources */,
 				E94E91B31D3CC89C00790ECD /* LXTopicCell.xib in Resources */,
 				E9C1D9601D40B75A0067DF15 /* LXFocusViewController.xib in Resources */,
@@ -713,9 +727,11 @@
 				E9B7BB681D38BC960008E21D /* LXNavigationController.m in Sources */,
 				E9B7BB8C1D38D1F20008E21D /* LXConst.m in Sources */,
 				E94E91951D3C6DE600790ECD /* LXUser.m in Sources */,
+				E94217A11D41FD87004EFC90 /* LXCommentHeaderView.m in Sources */,
 				E94E919C1D3C714B00790ECD /* NSDate+LXExtension.m in Sources */,
 				E94E91921D3C6DA900790ECD /* LXTopic.m in Sources */,
 				E918AA0E1D3F5E1500BE2F8A /* LXProgressView.m in Sources */,
+				E94217A51D41FF4D004EFC90 /* LXCommentCell.m in Sources */,
 				E918AA261D3F793200BE2F8A /* LXVerticalButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
