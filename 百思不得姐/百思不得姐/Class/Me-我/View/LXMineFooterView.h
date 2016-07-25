@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface LXMineFooterView : UIView
+@property (nonatomic, assign)CGFloat height1;
 
 @end

@@ -17,6 +17,8 @@ static NSString *mineID = @"mine";
 
 @interface LXMeViewController ()
 
+@property (nonatomic, strong)LXMineFooterView *myFootView;
+
 @end
 
 @implementation LXMeViewController
@@ -27,9 +29,10 @@ static NSString *mineID = @"mine";
     [self setupNav];
     
     [self setupTableView];
+
 }
 
--(void)setupNav {
+- (void)setupNav {
     self.view.backgroundColor = LXGlobalBg;
     //设置导航栏内容
     self.navigationItem.title = @"我的";
@@ -40,7 +43,7 @@ static NSString *mineID = @"mine";
     self.navigationItem.rightBarButtonItems = @[[UIBarButtonItem itemWithImage:@"mine-setting-icon" highImage:@"mine-setting-icon-click" target:self action:@selector(settingButtonClick)], [UIBarButtonItem itemWithImage:@"mine-moon-icon" highImage:@"mine-moon-icon-click" target:self action:@selector(moonButtonClick)]];
 }
 
--(void)setupTableView {
+- (void)setupTableView {
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self.tableView registerClass:[LXMineCell class] forCellReuseIdentifier:mineID];
     self.tableView.sectionHeaderHeight = 0;
@@ -48,21 +51,46 @@ static NSString *mineID = @"mine";
     //往上移动 25
     self.tableView.contentInset = UIEdgeInsetsMake(LXTopicCellMargin - 35, 0, 0, 0);
     //设置footerView
-    self.tableView.tableFooterView = [[LXMineFooterView alloc] init];
+    _myFootView = [[LXMineFooterView alloc]init];
+    self.tableView.tableFooterView = _myFootView;
+    //self.tableView.backgroundColor = [UIColor brownColor];
+    self.tableView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - 64 - 49);
+    
+    
+    NSLog(@"-- footViewframe:%@",NSStringFromCGRect(_myFootView.frame));
+    
+    NSLog(@"-- contentsize: %@",NSStringFromCGSize(self.tableView.contentSize));
+    NSLog(@"-- contentoffset: %@",NSStringFromCGPoint(self.tableView.contentOffset));
+
+    NSLog(@"-- contentinset: %@",NSStringFromUIEdgeInsets(self.tableView.contentInset));
+
 }
 
+
+-(void)viewDidAppear:(BOOL)animated{
+    NSLog(@"viewDidAppear ---:%lf,",_myFootView.height1);
+    
+}
+
+
+-(void)viewDidDisappear:(BOOL)animated{
+    [super viewDidDisappear:animated];
+    NSLog(@"--+++ contentsize: %@",NSStringFromCGSize(self.tableView.contentSize));
+}
+
+
 #pragma mark 导航栏左边的按钮点击
--(void)coinButtonClick {
+- (void)coinButtonClick {
     LXLogFunc;
 }
 
 #pragma mark 导航栏夜间模式按钮点击
--(void)moonButtonClick {
+- (void)moonButtonClick {
     LXLogFunc;
 }
 
 #pragma mark 导航栏右边设置的按钮点击
--(void)settingButtonClick {
+- (void)settingButtonClick {
     LXLogFunc;
 }
 
@@ -96,10 +124,33 @@ static NSString *mineID = @"mine";
     return cell;
 }
 
+//
+//-(UIView*)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
+//
+//    if (section == 1) {
+//        _myFootView = [[LXMineFooterView alloc]init];
+//        return _myFootView;
+//    }
+//    return nil;
+//}
+//
+//- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+//    NSLog(@"%lf,",_myFootView.height);
+//
+//    if (section ==1 ) {
+//        return 800;
+//    }
+//    return 20;
+//}
+
+
+
 #pragma mark -UITableViewDelegate
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
 }
+
+
 
 /*
 // Override to support conditional editing of the table view.
