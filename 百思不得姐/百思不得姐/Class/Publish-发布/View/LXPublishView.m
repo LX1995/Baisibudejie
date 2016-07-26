@@ -116,6 +116,7 @@ static UIWindow *window_;
 }
 
 - (IBAction)cancel:(id)sender {
+    [self cancelWithCompletionBlock:nil];
 }
 
 

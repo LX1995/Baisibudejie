@@ -47,6 +47,7 @@
 		E94E91AE1D3CC4BB00790ECD /* NSString+LXExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E94E91AD1D3CC4BB00790ECD /* NSString+LXExtension.m */; };
 		E94E91B21D3CC89C00790ECD /* LXTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E94E91B01D3CC89C00790ECD /* LXTopicCell.m */; };
 		E94E91B31D3CC89C00790ECD /* LXTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E94E91B11D3CC89C00790ECD /* LXTopicCell.xib */; };
+		E980FBBC1D46FFA4008CC643 /* LXPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E980FBBB1D46FFA4008CC643 /* LXPostViewController.m */; };
 		E9B7BB301D38B4530008E21D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B7BB2F1D38B4530008E21D /* main.m */; };
 		E9B7BB331D38B4530008E21D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B7BB321D38B4530008E21D /* AppDelegate.m */; };
 		E9B7BB361D38B4530008E21D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B7BB351D38B4530008E21D /* ViewController.m */; };
@@ -144,6 +145,8 @@
 		E94E91AF1D3CC89C00790ECD /* LXTopicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXTopicCell.h; sourceTree = "<group>"; };
 		E94E91B01D3CC89C00790ECD /* LXTopicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXTopicCell.m; sourceTree = "<group>"; };
 		E94E91B11D3CC89C00790ECD /* LXTopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LXTopicCell.xib; sourceTree = "<group>"; };
+		E980FBBA1D46FFA4008CC643 /* LXPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXPostViewController.h; sourceTree = "<group>"; };
+		E980FBBB1D46FFA4008CC643 /* LXPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXPostViewController.m; sourceTree = "<group>"; };
 		E9B7BB2B1D38B4530008E21D /* 百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9B7BB2F1D38B4530008E21D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E9B7BB311D38B4530008E21D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
@@ -537,6 +540,8 @@
 				E918AA1F1D3F77F400BE2F8A /* LXPublishViewController.h */,
 				E918AA201D3F77F400BE2F8A /* LXPublishViewController.m */,
 				E918AA211D3F77F400BE2F8A /* LXPublishViewController.xib */,
+				E980FBBA1D46FFA4008CC643 /* LXPostViewController.h */,
+				E980FBBB1D46FFA4008CC643 /* LXPostViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -733,6 +738,7 @@
 				E918AA021D3F4E0B00BE2F8A /* LXRecommandTagCell.m in Sources */,
 				E9B7BB361D38B4530008E21D /* ViewController.m in Sources */,
 				E9C1D9551D40A22E0067DF15 /* LXAVPlayerTool.m in Sources */,
+				E980FBBC1D46FFA4008CC643 /* LXPostViewController.m in Sources */,
 				E94E91A81D3CC3D600790ECD /* UIImage+LXExtension.m in Sources */,
 				E9C1D9471D405FD50067DF15 /* LXVoiceView.m in Sources */,
 				E9C1D9641D40B9350067DF15 /* LXLoginRegisterViewController.m in Sources */,

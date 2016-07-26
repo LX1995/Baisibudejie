@@ -71,6 +71,7 @@ static NSString *const commentID = @"comment";
     //    self.tableView.mj_footer.hidden = YES;
 }
 
+//-------此处有问题------
 - (void)loadNewComments {
     // 结束之前的所有请求
     [self.manager.tasks makeObjectsPerformSelector:@selector(cancel)];
@@ -147,38 +148,38 @@ static NSString *const commentID = @"comment";
 }
 
 - (void)setupHeader {
-//    UIView *header = [[UIView alloc] init];
-//    
-//    //清空top_cmt
-//    if (self.topic.top_cmt) {
-//        self.saved_top_cmt = self.topic.top_cmt;
-//        self.topic.top_cmt = nil;
-//        [self.topic setValue:@0 forKey:@"cellHeight"];
-//    }
-//    
-//    LXTopicCell *cell = [LXTopicCell cell];
-//    cell.topic = self.topic;;
-//    cell.height = self.topic.cellHeight;
-//    cell.width = SCREENW;
-//    [header addSubview:cell];
-//    header.height = self.topic.cellHeight + LXTopicCellMargin;
-//    self.tableView.tableHeaderView = header;
-//    self.tableView.backgroundColor = LXGlobalBg;
+    UIView *header = [[UIView alloc] init];
+    
+    //清空top_cmt
+    if (self.topic.top_cmt) {
+        self.saved_top_cmt = self.topic.top_cmt;
+        self.topic.top_cmt = nil;
+        [self.topic setValue:@0 forKey:@"cellHeight"];
+    }
+    
+    LXTopicCell *cell = [LXTopicCell cell];
+    cell.topic = self.topic;;
+    cell.height = self.topic.cellHeight;
+    cell.width = SCREENW;
+    [header addSubview:cell];
+    header.height = self.topic.cellHeight + LXTopicCellMargin;
+    self.tableView.tableHeaderView = header;
+    self.tableView.backgroundColor = LXGlobalBg;
 }
 
 - (void)setupBasic {
-//    self.navigationItem.title = @"评论";
-//    self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithImage:@"comment_nav_item_share_icon" highImage:@"comment_nav_item_share_icon_click" target:nil action:nil];
-//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillChangeFrame:) name:UIKeyboardWillChangeFrameNotification object:nil];
-//    //cell的高度设置
-//    self.tableView.estimatedRowHeight = 44;
-//    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-//    self.tableView.rowHeight = UITableViewAutomaticDimension;
-//    
-//    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([LXCommentCell class]) bundle:nil] forCellReuseIdentifier:commentID];
-//    
-//    //内边距
-//    self.tableView.contentInset = UIEdgeInsetsMake(0, 0, 10, 0);
+    self.navigationItem.title = @"评论";
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithImage:@"comment_nav_item_share_icon" highImage:@"comment_nav_item_share_icon_click" target:nil action:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillChangeFrame:) name:UIKeyboardWillChangeFrameNotification object:nil];
+    //cell的高度设置
+    self.tableView.estimatedRowHeight = 44;
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
+    
+    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([LXCommentCell class]) bundle:nil] forCellReuseIdentifier:commentID];
+    
+    //内边距
+    self.tableView.contentInset = UIEdgeInsetsMake(0, 0, 10, 0);
 }
 
 - (void)keyboardWillChangeFrame:(NSNotification *)notification {
@@ -213,6 +214,7 @@ static NSString *const commentID = @"comment";
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    
     //先从缓存池中找
     LXCommentHeaderView *header = [LXCommentHeaderView headerViewTableView:tableView];
     
