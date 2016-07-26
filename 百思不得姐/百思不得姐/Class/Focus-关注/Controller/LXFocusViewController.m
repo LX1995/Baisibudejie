@@ -7,11 +7,9 @@
 //
 
 #import "LXFocusViewController.h"
-//#import "LXRecommandViewController.h"
+#import "LXRecommandViewController.h"
 #import "LXLoginRegisterViewController.h"
-
 #import "UIBarButtonItem+LXExtension.h"
-
 #import "PrefixHeader.pch"
 
 @interface LXFocusViewController ()
@@ -37,9 +35,9 @@
 
 #pragma mark 导航栏左边的按钮点击
 -(void)friendsRecButtonClick {
-//    YMRecommandViewController *recommandVC = [[YMRecommandViewController alloc] init];
-//    
-//    [self.navigationController pushViewController:recommandVC animated:YES];
+    LXRecommandViewController *recommandVC = [[LXRecommandViewController alloc] init];
+    
+    [self.navigationController pushViewController:recommandVC animated:YES];
 }
 
 - (IBAction)loginRegister:(id)sender {

@@ -52,6 +52,15 @@
 		E980FBC11D47369B008CC643 /* LXTimeSheetView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E980FBC01D47369B008CC643 /* LXTimeSheetView.xib */; };
 		E980FBC31D473959008CC643 /* LXLightView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E980FBC21D473959008CC643 /* LXLightView.xib */; };
 		E980FBC61D473967008CC643 /* LXLightView.m in Sources */ = {isa = PBXBuildFile; fileRef = E980FBC51D473967008CC643 /* LXLightView.m */; };
+		E980FBCA1D474805008CC643 /* LXRecommandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E980FBC81D474805008CC643 /* LXRecommandViewController.m */; };
+		E980FBCB1D474805008CC643 /* LXRecommandViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E980FBC91D474805008CC643 /* LXRecommandViewController.xib */; };
+		E980FBCE1D474A4D008CC643 /* LXRecommandCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = E980FBCD1D474A4D008CC643 /* LXRecommandCategory.m */; };
+		E980FBD11D474ADE008CC643 /* LXRecommandUser.m in Sources */ = {isa = PBXBuildFile; fileRef = E980FBD01D474ADE008CC643 /* LXRecommandUser.m */; };
+		E980FBD41D474B31008CC643 /* LXTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E980FBD31D474B31008CC643 /* LXTextField.m */; };
+		E980FBD81D474C5C008CC643 /* LXRecommandCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E980FBD61D474C5C008CC643 /* LXRecommandCategoryCell.m */; };
+		E980FBD91D474C5C008CC643 /* LXRecommandCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E980FBD71D474C5C008CC643 /* LXRecommandCategoryCell.xib */; };
+		E980FBDD1D474EAD008CC643 /* LXRecommandUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E980FBDB1D474EAD008CC643 /* LXRecommandUserCell.m */; };
+		E980FBDE1D474EAD008CC643 /* LXRecommandUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E980FBDC1D474EAD008CC643 /* LXRecommandUserCell.xib */; };
 		E9B7BB301D38B4530008E21D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B7BB2F1D38B4530008E21D /* main.m */; };
 		E9B7BB331D38B4530008E21D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B7BB321D38B4530008E21D /* AppDelegate.m */; };
 		E9B7BB361D38B4530008E21D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B7BB351D38B4530008E21D /* ViewController.m */; };
@@ -157,6 +166,21 @@
 		E980FBC21D473959008CC643 /* LXLightView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LXLightView.xib; sourceTree = "<group>"; };
 		E980FBC41D473967008CC643 /* LXLightView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXLightView.h; sourceTree = "<group>"; };
 		E980FBC51D473967008CC643 /* LXLightView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXLightView.m; sourceTree = "<group>"; };
+		E980FBC71D474805008CC643 /* LXRecommandViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXRecommandViewController.h; sourceTree = "<group>"; };
+		E980FBC81D474805008CC643 /* LXRecommandViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXRecommandViewController.m; sourceTree = "<group>"; };
+		E980FBC91D474805008CC643 /* LXRecommandViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LXRecommandViewController.xib; sourceTree = "<group>"; };
+		E980FBCC1D474A4D008CC643 /* LXRecommandCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXRecommandCategory.h; sourceTree = "<group>"; };
+		E980FBCD1D474A4D008CC643 /* LXRecommandCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXRecommandCategory.m; sourceTree = "<group>"; };
+		E980FBCF1D474ADE008CC643 /* LXRecommandUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXRecommandUser.h; sourceTree = "<group>"; };
+		E980FBD01D474ADE008CC643 /* LXRecommandUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXRecommandUser.m; sourceTree = "<group>"; };
+		E980FBD21D474B31008CC643 /* LXTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXTextField.h; sourceTree = "<group>"; };
+		E980FBD31D474B31008CC643 /* LXTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXTextField.m; sourceTree = "<group>"; };
+		E980FBD51D474C5C008CC643 /* LXRecommandCategoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXRecommandCategoryCell.h; sourceTree = "<group>"; };
+		E980FBD61D474C5C008CC643 /* LXRecommandCategoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXRecommandCategoryCell.m; sourceTree = "<group>"; };
+		E980FBD71D474C5C008CC643 /* LXRecommandCategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LXRecommandCategoryCell.xib; sourceTree = "<group>"; };
+		E980FBDA1D474EAD008CC643 /* LXRecommandUserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXRecommandUserCell.h; sourceTree = "<group>"; };
+		E980FBDB1D474EAD008CC643 /* LXRecommandUserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXRecommandUserCell.m; sourceTree = "<group>"; };
+		E980FBDC1D474EAD008CC643 /* LXRecommandUserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LXRecommandUserCell.xib; sourceTree = "<group>"; };
 		E9B7BB2B1D38B4530008E21D /* 百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9B7BB2F1D38B4530008E21D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E9B7BB311D38B4530008E21D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
@@ -445,6 +469,9 @@
 				E9C1D9611D40B9350067DF15 /* LXLoginRegisterViewController.h */,
 				E9C1D9621D40B9350067DF15 /* LXLoginRegisterViewController.m */,
 				E9C1D9631D40B9350067DF15 /* LXLoginRegisterViewController.xib */,
+				E980FBC71D474805008CC643 /* LXRecommandViewController.h */,
+				E980FBC81D474805008CC643 /* LXRecommandViewController.m */,
+				E980FBC91D474805008CC643 /* LXRecommandViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -452,6 +479,10 @@
 		E9B7BB581D38BC460008E21D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E980FBCC1D474A4D008CC643 /* LXRecommandCategory.h */,
+				E980FBCD1D474A4D008CC643 /* LXRecommandCategory.m */,
+				E980FBCF1D474ADE008CC643 /* LXRecommandUser.h */,
+				E980FBD01D474ADE008CC643 /* LXRecommandUser.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -461,6 +492,14 @@
 			children = (
 				E918AA241D3F793200BE2F8A /* LXVerticalButton.h */,
 				E918AA251D3F793200BE2F8A /* LXVerticalButton.m */,
+				E980FBD21D474B31008CC643 /* LXTextField.h */,
+				E980FBD31D474B31008CC643 /* LXTextField.m */,
+				E980FBD51D474C5C008CC643 /* LXRecommandCategoryCell.h */,
+				E980FBD61D474C5C008CC643 /* LXRecommandCategoryCell.m */,
+				E980FBD71D474C5C008CC643 /* LXRecommandCategoryCell.xib */,
+				E980FBDA1D474EAD008CC643 /* LXRecommandUserCell.h */,
+				E980FBDB1D474EAD008CC643 /* LXRecommandUserCell.m */,
+				E980FBDC1D474EAD008CC643 /* LXRecommandUserCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -675,6 +714,8 @@
 				E9C1D95B1D40A2D60067DF15 /* LXAVPlayerView.xib in Resources */,
 				E918AA031D3F4E0B00BE2F8A /* LXRecommandTagCell.xib in Resources */,
 				E9B7BB3B1D38B4530008E21D /* Assets.xcassets in Resources */,
+				E980FBDE1D474EAD008CC643 /* LXRecommandUserCell.xib in Resources */,
+				E980FBCB1D474805008CC643 /* LXRecommandViewController.xib in Resources */,
 				E9C1D9491D405FEC0067DF15 /* LXVoiceView.xib in Resources */,
 				E918AA231D3F77F400BE2F8A /* LXPublishViewController.xib in Resources */,
 				E918AA0B1D3F592A00BE2F8A /* LXShowPictureViewController.xib in Resources */,
@@ -684,6 +725,7 @@
 				E94E91891D3C661C00790ECD /* LXCommentViewController.xib in Resources */,
 				E94E91B31D3CC89C00790ECD /* LXTopicCell.xib in Resources */,
 				E9C1D9601D40B75A0067DF15 /* LXFocusViewController.xib in Resources */,
+				E980FBD91D474C5C008CC643 /* LXRecommandCategoryCell.xib in Resources */,
 				E9B7BB391D38B4530008E21D /* Main.storyboard in Resources */,
 				E918AA181D3F67C400BE2F8A /* LXVideoView.xib in Resources */,
 				E9C1D9651D40B9350067DF15 /* LXLoginRegisterViewController.xib in Resources */,
@@ -747,6 +789,7 @@
 			files = (
 				E918AA1C1D3F763300BE2F8A /* LXPublishView.m in Sources */,
 				E918AA0A1D3F592A00BE2F8A /* LXShowPictureViewController.m in Sources */,
+				E980FBD41D474B31008CC643 /* LXTextField.m in Sources */,
 				E980FBC61D473967008CC643 /* LXLightView.m in Sources */,
 				E94217B41D421E58004EFC90 /* LXMineFooterView.m in Sources */,
 				E980FBBF1D47368B008CC643 /* LXTimeSheetView.m in Sources */,
@@ -757,10 +800,12 @@
 				E9B7BB6B1D38BCB90008E21D /* LXTabbarController.m in Sources */,
 				E94E919F1D3CAB8200790ECD /* LXMeViewController.m in Sources */,
 				E918AA021D3F4E0B00BE2F8A /* LXRecommandTagCell.m in Sources */,
+				E980FBCE1D474A4D008CC643 /* LXRecommandCategory.m in Sources */,
 				E9B7BB361D38B4530008E21D /* ViewController.m in Sources */,
 				E9C1D9551D40A22E0067DF15 /* LXAVPlayerTool.m in Sources */,
 				E980FBBC1D46FFA4008CC643 /* LXPostViewController.m in Sources */,
 				E94E91A81D3CC3D600790ECD /* UIImage+LXExtension.m in Sources */,
+				E980FBD11D474ADE008CC643 /* LXRecommandUser.m in Sources */,
 				E9C1D9471D405FD50067DF15 /* LXVoiceView.m in Sources */,
 				E9C1D9641D40B9350067DF15 /* LXLoginRegisterViewController.m in Sources */,
 				E94E91B21D3CC89C00790ECD /* LXTopicCell.m in Sources */,
@@ -776,6 +821,7 @@
 				E9B7BB891D38CD480008E21D /* UIView+LXExtension.m in Sources */,
 				E9B7BB751D38C0810008E21D /* LXEssenceViewController.m in Sources */,
 				E9C1D9521D40779A0067DF15 /* LXNewViewController.m in Sources */,
+				E980FBCA1D474805008CC643 /* LXRecommandViewController.m in Sources */,
 				E9C1D94B1D4069CE0067DF15 /* Foundation+Log.m in Sources */,
 				E94217B11D421E07004EFC90 /* LXMineCell.m in Sources */,
 				E918AA161D3F67B600BE2F8A /* LXVideoView.m in Sources */,
@@ -785,11 +831,13 @@
 				E9B7BB301D38B4530008E21D /* main.m in Sources */,
 				E9B7BB681D38BC960008E21D /* LXNavigationController.m in Sources */,
 				E9B7BB8C1D38D1F20008E21D /* LXConst.m in Sources */,
+				E980FBD81D474C5C008CC643 /* LXRecommandCategoryCell.m in Sources */,
 				E94E91951D3C6DE600790ECD /* LXUser.m in Sources */,
 				E94217A11D41FD87004EFC90 /* LXCommentHeaderView.m in Sources */,
 				E94E919C1D3C714B00790ECD /* NSDate+LXExtension.m in Sources */,
 				E94217B71D421E90004EFC90 /* LXSquareButton.m in Sources */,
 				E94E91921D3C6DA900790ECD /* LXTopic.m in Sources */,
+				E980FBDD1D474EAD008CC643 /* LXRecommandUserCell.m in Sources */,
 				E918AA0E1D3F5E1500BE2F8A /* LXProgressView.m in Sources */,
 				E94217A51D41FF4D004EFC90 /* LXCommentCell.m in Sources */,
 				E94217A91D421D85004EFC90 /* LXSquare.m in Sources */,
@@ -906,7 +954,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "百思不得姐/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dunoinfo.www.Baisi.LX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -921,7 +969,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "百思不得姐/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dunoinfo.www.Baisi.LX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
