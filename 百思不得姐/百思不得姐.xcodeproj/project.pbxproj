@@ -48,6 +48,10 @@
 		E94E91B21D3CC89C00790ECD /* LXTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E94E91B01D3CC89C00790ECD /* LXTopicCell.m */; };
 		E94E91B31D3CC89C00790ECD /* LXTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E94E91B11D3CC89C00790ECD /* LXTopicCell.xib */; };
 		E980FBBC1D46FFA4008CC643 /* LXPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E980FBBB1D46FFA4008CC643 /* LXPostViewController.m */; };
+		E980FBBF1D47368B008CC643 /* LXTimeSheetView.m in Sources */ = {isa = PBXBuildFile; fileRef = E980FBBE1D47368B008CC643 /* LXTimeSheetView.m */; };
+		E980FBC11D47369B008CC643 /* LXTimeSheetView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E980FBC01D47369B008CC643 /* LXTimeSheetView.xib */; };
+		E980FBC31D473959008CC643 /* LXLightView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E980FBC21D473959008CC643 /* LXLightView.xib */; };
+		E980FBC61D473967008CC643 /* LXLightView.m in Sources */ = {isa = PBXBuildFile; fileRef = E980FBC51D473967008CC643 /* LXLightView.m */; };
 		E9B7BB301D38B4530008E21D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B7BB2F1D38B4530008E21D /* main.m */; };
 		E9B7BB331D38B4530008E21D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B7BB321D38B4530008E21D /* AppDelegate.m */; };
 		E9B7BB361D38B4530008E21D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B7BB351D38B4530008E21D /* ViewController.m */; };
@@ -147,6 +151,12 @@
 		E94E91B11D3CC89C00790ECD /* LXTopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LXTopicCell.xib; sourceTree = "<group>"; };
 		E980FBBA1D46FFA4008CC643 /* LXPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXPostViewController.h; sourceTree = "<group>"; };
 		E980FBBB1D46FFA4008CC643 /* LXPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXPostViewController.m; sourceTree = "<group>"; };
+		E980FBBD1D47368B008CC643 /* LXTimeSheetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXTimeSheetView.h; sourceTree = "<group>"; };
+		E980FBBE1D47368B008CC643 /* LXTimeSheetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXTimeSheetView.m; sourceTree = "<group>"; };
+		E980FBC01D47369B008CC643 /* LXTimeSheetView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LXTimeSheetView.xib; sourceTree = "<group>"; };
+		E980FBC21D473959008CC643 /* LXLightView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LXLightView.xib; sourceTree = "<group>"; };
+		E980FBC41D473967008CC643 /* LXLightView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXLightView.h; sourceTree = "<group>"; };
+		E980FBC51D473967008CC643 /* LXLightView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXLightView.m; sourceTree = "<group>"; };
 		E9B7BB2B1D38B4530008E21D /* 百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9B7BB2F1D38B4530008E21D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E9B7BB311D38B4530008E21D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
@@ -214,7 +224,7 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		E918AA191D3F6C1800BE2F8A /* LRLAVPlayer */ = {
+		E918AA191D3F6C1800BE2F8A /* LXAVPlayer */ = {
 			isa = PBXGroup;
 			children = (
 				E9C1D9561D40A2660067DF15 /* LXAVPlayerDefine.h */,
@@ -223,7 +233,14 @@
 				E9C1D9571D40A2C50067DF15 /* LXAVPlayerView.h */,
 				E9C1D9581D40A2C50067DF15 /* LXAVPlayerView.m */,
 				E9C1D95A1D40A2D60067DF15 /* LXAVPlayerView.xib */,
+				E980FBBD1D47368B008CC643 /* LXTimeSheetView.h */,
+				E980FBBE1D47368B008CC643 /* LXTimeSheetView.m */,
+				E980FBC01D47369B008CC643 /* LXTimeSheetView.xib */,
+				E980FBC41D473967008CC643 /* LXLightView.h */,
+				E980FBC51D473967008CC643 /* LXLightView.m */,
+				E980FBC21D473959008CC643 /* LXLightView.xib */,
 			);
+			name = LXAVPlayer;
 			path = LRLAVPlayer;
 			sourceTree = "<group>";
 		};
@@ -283,7 +300,7 @@
 		E9B7BB4D1D38BAA00008E21D /* Essence-精华 */ = {
 			isa = PBXGroup;
 			children = (
-				E918AA191D3F6C1800BE2F8A /* LRLAVPlayer */,
+				E918AA191D3F6C1800BE2F8A /* LXAVPlayer */,
 				E9B7BB541D38BC3E0008E21D /* Controller */,
 				E9B7BB551D38BC3E0008E21D /* Model */,
 				E9B7BB561D38BC3E0008E21D /* View */,
@@ -654,12 +671,14 @@
 				E918AA1E1D3F764300BE2F8A /* LXPublishView.xib in Resources */,
 				E9B7BB3E1D38B4530008E21D /* LaunchScreen.storyboard in Resources */,
 				E918AA131D3F5FAC00BE2F8A /* LXTopicPictureView.xib in Resources */,
+				E980FBC31D473959008CC643 /* LXLightView.xib in Resources */,
 				E9C1D95B1D40A2D60067DF15 /* LXAVPlayerView.xib in Resources */,
 				E918AA031D3F4E0B00BE2F8A /* LXRecommandTagCell.xib in Resources */,
 				E9B7BB3B1D38B4530008E21D /* Assets.xcassets in Resources */,
 				E9C1D9491D405FEC0067DF15 /* LXVoiceView.xib in Resources */,
 				E918AA231D3F77F400BE2F8A /* LXPublishViewController.xib in Resources */,
 				E918AA0B1D3F592A00BE2F8A /* LXShowPictureViewController.xib in Resources */,
+				E980FBC11D47369B008CC643 /* LXTimeSheetView.xib in Resources */,
 				E94217A61D41FF4D004EFC90 /* LXCommentCell.xib in Resources */,
 				E94217AE1D421DC7004EFC90 /* LXWebViewController.xib in Resources */,
 				E94E91891D3C661C00790ECD /* LXCommentViewController.xib in Resources */,
@@ -728,7 +747,9 @@
 			files = (
 				E918AA1C1D3F763300BE2F8A /* LXPublishView.m in Sources */,
 				E918AA0A1D3F592A00BE2F8A /* LXShowPictureViewController.m in Sources */,
+				E980FBC61D473967008CC643 /* LXLightView.m in Sources */,
 				E94217B41D421E58004EFC90 /* LXMineFooterView.m in Sources */,
+				E980FBBF1D47368B008CC643 /* LXTimeSheetView.m in Sources */,
 				E94217AD1D421DC7004EFC90 /* LXWebViewController.m in Sources */,
 				E94E91881D3C661C00790ECD /* LXCommentViewController.m in Sources */,
 				E94E918F1D3C6D8800790ECD /* LXRecommandTag.m in Sources */,

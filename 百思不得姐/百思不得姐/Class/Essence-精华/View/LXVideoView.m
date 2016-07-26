@@ -10,7 +10,7 @@
 #import "LXVideoView.h"
 #import "LXTopic.h"
 #import "UIImageView+WebCache.h"
-//#import "LRLAVPlayerView.h"
+#import "LXAVPlayerView.h"
 #import <MediaPlayer/MediaPlayer.h>
 
 @interface LXVideoView ()
