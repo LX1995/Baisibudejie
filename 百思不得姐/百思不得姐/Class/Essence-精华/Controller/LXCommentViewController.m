@@ -180,6 +180,9 @@ static NSString *const commentID = @"comment";
     
     //内边距
     self.tableView.contentInset = UIEdgeInsetsMake(0, 0, 10, 0);
+    
+//    self.tableView.delegate = self;
+//    self.tableView.dataSource = self;
 }
 
 - (void)keyboardWillChangeFrame:(NSNotification *)notification {

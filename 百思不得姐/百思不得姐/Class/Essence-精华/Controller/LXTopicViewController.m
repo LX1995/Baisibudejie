@@ -65,6 +65,9 @@ static NSString *const LXTopicCellID = @"topic";
     
     // 监听 tabBar 点击的通知
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(tabBarSelected) name:LXTabBarDidSelectedNotification object:nil];
+    
+//    self.tableView.delegate = self;
+//    self.tableView.dataSource = self;
 }
 
 -(void)tabBarSelected {

@@ -98,6 +98,11 @@ static NSString * const userID = @"user";
     self.categoryTableView.tableFooterView = [UIView new];
     self.userTableView.tableFooterView = [UIView new];
     self.userTableView.rowHeight = 70;
+    
+    self.categoryTableView.delegate = self;
+    self.categoryTableView.dataSource = self;
+    self.userTableView.delegate = self;
+    self.userTableView.dataSource = self;
 }
 
 #pragma mark 添加刷新控件
