@@ -13,6 +13,9 @@
 #import "PrefixHeader.pch"
 #import "UIBarButtonItem+LXExtension.h"
 
+#import "LXSetViewController.h"
+#import "LXLoginRegisterViewController.h"
+
 static NSString *mineID = @"mine";
 
 @interface LXMeViewController ()
@@ -91,7 +94,10 @@ static NSString *mineID = @"mine";
 
 #pragma mark 导航栏右边设置的按钮点击
 - (void)settingButtonClick {
-    LXLogFunc;
+    //LXLogFunc;
+    LXSetViewController *setVC = [[LXSetViewController alloc] init];
+    
+    [self.navigationController pushViewController:setVC animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -147,6 +153,17 @@ static NSString *mineID = @"mine";
 
 #pragma mark -UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    LXLoginRegisterViewController *loginVC = [[LXLoginRegisterViewController alloc] init];
+    
+    switch (indexPath.section) {
+        case 0:
+            [self presentViewController:loginVC animated:YES completion:nil];
+            break;
+            
+        default:
+            break;
+    }
     
 }
 

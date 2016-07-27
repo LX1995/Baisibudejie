@@ -85,6 +85,7 @@
 		E9C1D9601D40B75A0067DF15 /* LXFocusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9C1D95E1D40B75A0067DF15 /* LXFocusViewController.xib */; };
 		E9C1D9641D40B9350067DF15 /* LXLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C1D9621D40B9350067DF15 /* LXLoginRegisterViewController.m */; };
 		E9C1D9651D40B9350067DF15 /* LXLoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9C1D9631D40B9350067DF15 /* LXLoginRegisterViewController.xib */; };
+		E9F4226E1D48940500860932 /* LXSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F4226D1D48940500860932 /* LXSetViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -224,6 +225,8 @@
 		E9C1D9611D40B9350067DF15 /* LXLoginRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXLoginRegisterViewController.h; sourceTree = "<group>"; };
 		E9C1D9621D40B9350067DF15 /* LXLoginRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXLoginRegisterViewController.m; sourceTree = "<group>"; };
 		E9C1D9631D40B9350067DF15 /* LXLoginRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LXLoginRegisterViewController.xib; sourceTree = "<group>"; };
+		E9F4226C1D48940500860932 /* LXSetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXSetViewController.h; sourceTree = "<group>"; };
+		E9F4226D1D48940500860932 /* LXSetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXSetViewController.m; sourceTree = "<group>"; };
 		FE640770C9206EA2EEE5A6AF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -541,6 +544,8 @@
 				E94217AA1D421DC7004EFC90 /* LXWebViewController.h */,
 				E94217AB1D421DC7004EFC90 /* LXWebViewController.m */,
 				E94217AC1D421DC7004EFC90 /* LXWebViewController.xib */,
+				E9F4226C1D48940500860932 /* LXSetViewController.h */,
+				E9F4226D1D48940500860932 /* LXSetViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -802,6 +807,7 @@
 				E918AA021D3F4E0B00BE2F8A /* LXRecommandTagCell.m in Sources */,
 				E980FBCE1D474A4D008CC643 /* LXRecommandCategory.m in Sources */,
 				E9B7BB361D38B4530008E21D /* ViewController.m in Sources */,
+				E9F4226E1D48940500860932 /* LXSetViewController.m in Sources */,
 				E9C1D9551D40A22E0067DF15 /* LXAVPlayerTool.m in Sources */,
 				E980FBBC1D46FFA4008CC643 /* LXPostViewController.m in Sources */,
 				E94E91A81D3CC3D600790ECD /* UIImage+LXExtension.m in Sources */,
@@ -953,11 +959,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "百思不得姐/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dunoinfo.www.Baisi.LX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Debug;
@@ -968,11 +976,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "百思不得姐/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dunoinfo.www.Baisi.LX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Release;

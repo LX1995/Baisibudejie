@@ -68,7 +68,7 @@ static NSString *const commentID = @"comment";
     [self.tableView.mj_header beginRefreshing];
     
     self.tableView.mj_footer = [MJRefreshAutoFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreComments)];
-    //    self.tableView.mj_footer.hidden = YES;
+    self.tableView.mj_footer.hidden = YES;
 }
 
 //-------此处有问题------
