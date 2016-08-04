@@ -70,7 +70,7 @@ static NSString *const LXTopicCellID = @"topic";
 //    self.tableView.dataSource = self;
 }
 
--(void)tabBarSelected {
+- (void)tabBarSelected {
     
     //如果是连点 2 次，并且 如果选中的是当前导航控制器，刷新
     if (self.lastSelectedIndex != self.tabBarController.selectedIndex && self.view.isShowingOnKeyWindow) {
@@ -81,7 +81,7 @@ static NSString *const LXTopicCellID = @"topic";
 }
 
 #pragma mark 添加刷新控件
--(void)setupRefresh {
+- (void)setupRefresh {
     self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewTopics)];
     self.tableView.mj_header.automaticallyChangeAlpha = YES;
     [self.tableView.mj_header beginRefreshing];
@@ -89,7 +89,7 @@ static NSString *const LXTopicCellID = @"topic";
 }
 
 #pragma mark 数据处理
--(void)loadNewTopics {
+- (void)loadNewTopics {
     //结束上拉
     [self.tableView.mj_footer endRefreshing];
     //请求参数
@@ -118,7 +118,7 @@ static NSString *const LXTopicCellID = @"topic";
 }
 
 #pragma mark 加载更多数据
--(void)loadMoreTopics {
+- (void)loadMoreTopics {
     //结束下拉
     [self.tableView.mj_header endRefreshing];
     
@@ -148,12 +148,12 @@ static NSString *const LXTopicCellID = @"topic";
 }
 
 #pragma mark - a 参数
--(NSString *)aParam {
+- (NSString *)aParam {
     return [self.presentationController isKindOfClass:[LXNewViewController class]] ? @"newList" : @"list";
 }
 
 #pragma mark - Table view delegate
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     //取出帖子模型
     LXTopic *topic = self.topics[indexPath.row];
     //返回这个cell对应的高度
@@ -172,13 +172,13 @@ static NSString *const LXTopicCellID = @"topic";
     return cell;
 }
 
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     LXCommentViewController *commetnVC = [[LXCommentViewController alloc] init];
-    //commetnVC.topic = self.topics[indexPath.row];
+    commetnVC.topic = self.topics[indexPath.row];
     [self.navigationController pushViewController:commetnVC animated:YES];
 }
 
--(NSMutableArray *)topics{
+- (NSMutableArray *)topics{
     if (_topics == nil) {
         _topics = [[NSMutableArray alloc] init];
     }
